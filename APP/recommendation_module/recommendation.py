@@ -21,6 +21,8 @@ def build_user_vector(user_scores, header):
   return user_vector
 
 def remove_decimal(x):
+  if x == "to be determined":
+    return 0
   result = float(x)
   while result > 1:
     result = result/10
